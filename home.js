@@ -30,18 +30,34 @@ const OverlayScreen = () => {
   return (
     <View
       style={{
-        flex: 1,
-        justifyContent: 'flex-end',
-        paddingBottom: 49,
+        position: 'absolute',
+        left: 0,
+        right: 0,
+        bottom: 49,
       }}>
       <View
         style={{
+          position: 'absolute',
+          left: 0,
+          right: 0,
+          bottom: 100,
           height: 100,
           backgroundColor: 'green',
         }}
       />
 
-      <View style={[{height: 100, backgroundColor: 'red'}]} />
+      <View
+        style={[
+          {
+            position: 'absolute',
+            left: 0,
+            right: 0,
+            bottom: 0,
+            height: 100,
+            backgroundColor: 'red',
+          },
+        ]}
+      />
     </View>
   );
 };
